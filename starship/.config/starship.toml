@@ -1,0 +1,12 @@
+# Move the directory to the second line
+format = """
+$all
+[@](bold white)\
+[$username ]($style)\
+$character 
+"""
+
+[username]
+show_always = true
+style_user = "green"
+format = "[$user]($style)"

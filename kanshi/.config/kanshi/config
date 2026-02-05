@@ -1,0 +1,23 @@
+profile docked {
+    output "DP-1, 2560x1440@59.95, 0x0, 1"
+    output "HDMI-A-1, 1920x1080@60, -1080x-150, 1, transform, 3"
+    output "eDP-1, disable"
+
+    #Hyprland dock specific config
+    exec cp ~/.config/hypr/Modules/dock_env.conf ~/.config/hypr/env.conf
+    exec cp ~/.config/hypr/Modules/dock_workspaces.conf ~/.config/hypr/workspaces.conf
+    #Hyprlock dock specific config
+    exec cp ~/.config/hypr/hyprlock/Modules/dock_monitor.conf ~/.config/hypr/hyprlock/current_monitor.conf
+    exec hyprctl reload
+}
+
+profile laptop {
+    output eDP-1 mode --custom 1920x1080@60Hz scale 1 position 0,0
+
+    #Hyprland laptop specific config
+    exec cp ~/.config/hypr/Modules/laptop_env.conf ~/.config/hypr/env.conf
+    exec cp ~/.config/hypr/Modules/laptop_workspaces.conf ~/.config/hypr/workspaces.conf
+    #Hyprlock laptop specific config
+    exec cp ~/.config/hypr/hyprlock/Modules/laptop_monitor.conf ~/.config/hypr/hyprlock/current_monitor.conf
+    exec hyprctl reload
+}
