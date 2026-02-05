@@ -24,7 +24,7 @@
     </clipPath>
   </defs>
   <image 
-    href="./Images/wallpaper.jpg" 
+    href="Images/wallpaper.jpg" 
     width="600" 
     height="50" 
     preserveAspectRatio="xMidYMid slice" 
@@ -46,7 +46,7 @@ This theme aesthetics is inspired by Y2K tech vibe.
     </clipPath>
   </defs>
   <image 
-    href="./Images/wallpaper.jpg" 
+    href="Images/wallpaper.jpg" 
     width="600" 
     height="500" 
     preserveAspectRatio="xMidYMid slice" 
