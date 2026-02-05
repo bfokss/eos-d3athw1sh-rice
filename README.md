@@ -17,20 +17,7 @@
 
 ## Aesthetics 
 <p align="center">
-<svg width="600" height="50">
-  <defs>
-    <clipPath id="clip">
-      <rect width="600" height="50" rx="5" />
-    </clipPath>
-  </defs>
-  <image 
-    href="Images/wallpaper.jpg" 
-    width="600" 
-    height="50" 
-    preserveAspectRatio="xMidYMid slice" 
-    clip-path="url(#clip)" 
-  />
-</svg>
+<img src="Images/banner1.png" width="600" alt="Banner Top">
 </p>
 
 <p align="center"><i>
@@ -39,20 +26,7 @@ This theme aesthetics is inspired by Y2K tech vibe.
 </p>
 
 <p align="center">
-<svg width="600" height="50">
-  <defs>
-    <clipPath id="clip">
-      <rect width="600" height="50" rx="5" />
-    </clipPath>
-  </defs>
-  <image 
-    href="Images/wallpaper.jpg" 
-    width="600" 
-    height="500" 
-    preserveAspectRatio="xMidYMid slice" 
-    clip-path="url(#clip)" 
-  />
-</svg>
+<img src="Images/banner2.png" width="600" alt="Banner Top">
 </p>
 
 ___
