@@ -1,0 +1,19 @@
+
+* {
+    /* Colors */
+    gradient-1:                 linear-gradient(45, #8ff586ee, #00ff99ee);
+    
+    background:                 #051a05b3;
+    background-alt:             #8ff586;
+    background-normal:          #051a05b3;
+    background-selected:        #8ff586;
+
+    foreground:                 #8ff586;
+    foreground-alt:             #dcf9d9;
+    foreground-normal:          #8ff586;
+    foreground-selected:        #0d2514;
+
+    /* Font */
+    font:                       "JetBrains Mono Nerd Font 10";
+    
+}

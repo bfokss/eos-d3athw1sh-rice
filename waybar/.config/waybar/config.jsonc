@@ -1,7 +1,7 @@
 {
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "hyprland/language", "pulseaudio", "custom/power"],
+    "modules-right": ["tray", "hyprland/language", "pulseaudio","network", "custom/power"],
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -48,7 +48,7 @@
     },
 	"custom/power": {
 		"format": " ",
-		"on-click": "wlogout"
+		"on-click": "~/.config/rofi/powermenu/powermenu.sh"
 	}
    
 }

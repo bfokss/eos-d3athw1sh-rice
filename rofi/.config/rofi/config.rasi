@@ -1,0 +1,261 @@
+/**
+ *
+ * Author : bfokss
+ * Based on rofi theme config from:
+ * Github : @adi1090x
+ *
+ **/
+
+ /*****----- Imports -----*****/
+@import "./shared/colors.rasi"
+
+/*****----- Configuration -----*****/
+configuration {
+	modi:                       "drun,filebrowser,window";
+    show-icons:                 true;
+    display-drun:               "a";
+    display-run:                "c";
+    display-filebrowser:        "f";
+    display-window:             "w";
+	drun-display-format:        "{name}";
+	window-format:              "{w} · {c} · {t}";
+    mouse:                      true;
+    hover-select:               true;
+    me-select-entry:            "";
+    me-accept-entry:            "MousePrimary";
+    kb-row-select:              "";
+    kb-complete:                "";
+    kb-element-next:            "";
+    kb-element-prev:            "";
+    kb-mode-next: "Tab";
+    
+}
+
+/*****----- Global Properties -----*****/
+* {
+    
+}
+
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  true;
+    padding:                     30%;
+    x-offset:                    0px;
+    y-offset:                    0px;
+    border:                      0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    cursor:                      "default";
+    background-color:            @background;
+    
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "listbox" ];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     0px;
+    padding:                     60px 60px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    orientation:                 horizontal;
+    border:                      0px;
+    children:                    [ "textbox-prompt", "entry", "dummy", "mode-switcher" ];
+}
+
+/* Searchbar icon */
+textbox-prompt {
+    enabled:                     true;
+    expand:                      false;
+    str:                         ">";
+    padding:                     12px 16px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+/* Searchbar */
+entry {
+    enabled:                     true;
+    expand:                      false;
+    width:                       250px;
+    padding:                     12px 16px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      text;
+    placeholder:                 "";
+    placeholder-color:           @foreground;
+    border:                      0px;
+}
+
+/* Empty space */
+dummy {
+    expand:                      true;
+    background-color:            transparent;
+}
+
+
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    
+}
+
+/* Mode button normal state*/
+button {
+    width:                       45px;
+    padding:                     12px;
+    background-color:            transparent;
+    text-color:                  transparent;
+    cursor:                      pointer;
+}
+
+
+/* Mode button selected state */
+button selected.normal {
+    background-color:           @background-selected;
+    background-image:           var(gradient-1);
+    text-color:                 @foreground-selected;
+    border-radius:              10px;
+}
+
+button selected.urgent {
+    background-color:           @background-selected;
+        background-image:           var(gradient-1);
+    text-color:                 @foreground-selected;
+}
+
+button selected.active {
+    background-color:           @background-selected;
+    background-image:           var(gradient-1);
+    text-color:                 @foreground-selected;
+}
+
+
+
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       7;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    border:                      0px;
+    spacing:                     10px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     4px;
+    border-radius:               10px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+
+/* List element normal state */
+element normal.normal,
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+/* List element selected state */
+element selected.normal {
+    background-color:            @background-selected;
+    background-image:            var(gradient-1);
+    text-color:                  @foreground-selected;
+}
+
+element selected.urgent {
+    background-color:            @background-selected;
+    background-image:            var(gradient-1);
+    text-color:                  @foreground-selected;
+}
+
+element selected.active {
+    background-color:            @background-selected;
+    background-image:            var(gradient-1);
+    text-color:                  @foreground-selected;
+}
+
+/* List element icon */
+element-icon {
+    background-color:            transparent;
+    size:                        32px;
+    cursor:                      inherit;
+}
+
+element-text {
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+message {
+    background-color:           transparent;
+    border:                     0px;
+    text-color:                 @foreground;
+}
+textbox {
+    padding:                     12px;
+    border-radius:               10px;
+    background-color:            @background;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    padding:                     12px;
+    border-radius:               20px;
+    background-color:            @background-selected;
+    text-color:                  @foreground-selected;
+}

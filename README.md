@@ -9,7 +9,7 @@
 |||
 |:-------|:-----------|
 | **OS** | EndeavourOS |
-| **Shell** | ZSH (Oh My Zsh) |
+| **Shell** | ZSH (Starship) |
 | **Terminal** | Kitty |
 | **Editor** | VS Code |
 | **WM** | Hyprland (Wayland) |
@@ -17,7 +17,7 @@
 
 ## Aesthetics 
 <p align="center">
-<img src="Images/banner1.png" width="600" alt="Banner Top">
+<img src="images/banner1.png" width="600" alt="Banner Top">
 </p>
 
 <p align="center"><i>
@@ -26,7 +26,7 @@ This theme aesthetics is inspired by Y2K tech vibe.
 </p>
 
 <p align="center">
-<img src="Images/banner2.png" width="600" alt="Banner Top">
+<img src="images/banner2.png" width="600" alt="Banner Top">
 </p>
 
 ___

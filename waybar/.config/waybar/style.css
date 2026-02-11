@@ -39,6 +39,10 @@ window#waybar {
 	background-color: rgba(0,43,51,0.85);
 }
 
+#workspaces button.active {
+    background-image: linear-gradient(45deg, rgba(143, 245, 134, 0.933), rgba(0, 255, 153, 0.933));
+}
+
 #clock,
 #battery,
 #cpu,
